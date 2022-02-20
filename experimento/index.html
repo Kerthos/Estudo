@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Treino </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            /* background: #21103ff6; */
+            background: linear-gradient(90deg, rgba(94, 72, 181, 1) 15%, rgba(32, 58, 89, 1) 81%);
+        }
+
+        #teste {
+            background-color: #11e6c3;
+            padding: 30px;
+            border-radius: 40px;
+        }
+
+        /* ::selection {
+            background-color: #ffff;
+        } */
+
+        #teste-2 {
+            margin: 25px;
+            background-color: #7622fc;
+            padding: 30px;
+            border-radius: 40px;
+            color: aliceblue;
+        }
+
+
+        img {
+            border-radius: 30px 30px;
+            box-shadow: 1px 5px 25px -5px;
+        }
+
+
+        img:hover {
+            transition: 2s;
+            border-radius: 100px;
+        }
+
+        a {
+            /* font-family: 'Lato', sans-serif; */
+            background: #2a024b;
+            text-decoration: none;
+            position: relative;
+            padding: 10px;
+            border-radius: 10px;
+            color: #f1e4e4;
+            font-size: 13pt;
+        }
+
+        a:hover {
+            transition: 2s;
+            color: #ba9fe6;
+            padding: 13px;
+
+            border-radius: 25px;
+        }
+
+        audio {
+            padding: 25px;
+            background-color: #5b11e6;
+            margin-top: 30px;
+            border-radius: 30px;
+
+        }
+
+        audio:hover {
+            transition: 1s;
+            padding: 30px;
+            background: url(./img/bg.jpg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- treinando divs e ids -->
+
+    <div id="teste">
+        <h1>Treino</h1>
+
+        <h2>Treino de imagens flexiveis</h2>
+
+        <p> Este é o meu treino com imagens flexiveis.</p>
+
+        <picture>
+
+            <source media="(max-width: 720px)" srcset="img/p-360x240.jpg" type="image/jpg">
+
+            <source media="(max-width: 1200px)" srcset="img/m-720x480.jpg" type="image/jpg">
+
+            <img src="img/g-1200x800.jpg" alt="imagem flexivel">
+
+        </picture>
+    </div> <!-- teste -->
+
+    <div id="teste-2">
+        <h2> Treino com áudio </h2>
+
+        <p>Este é o meu treino com áudio em diversos formatos</p>
+
+        <audio preload="auto" controls loop>
+
+            <source src="midia/Cosmic Drift - DivKid.mp3" type="audio/mpeg">
+
+            <!-- Possiveis formatos de áudio que o navegado pode aceitar e funcionar -->
+
+            <!-- <source src="midia/Cosmic Drift - DivKid.ogg" type="audio/ogg">
+
+        <source src="midia/Cosmic Drift - DivKid.wav" type="audio/wav"> -->
+
+            <p> Caso o seu navegador não seja compátivel com esse formato de áudio, por favor clique no donwload abaixo.
+            </p>
+
+            <p> <a href="midia/Cosmic Drift - DivKid.mp3">Download Áudio</a> </p>
+        </audio>
+
+        <!-- <p> <a href="midia/Cosmic Drift - DivKid.mp3">Download Áudio</a> </p> -->
+
+    </div> <!-- teste-2 -->
+
+</body>
+
+</html>
