@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens fluídas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            background-color: #1c221b;
+        }
+
+        img {
+            border-radius: 90px;
+            box-shadow: 0px 1px 10px;
+            filter: grayscale(65%);
+        }
+
+        h1 {
+            background: #68ca94;
+            padding: 10px;
+            color: white;
+            border-radius: 35px;
+        }
+
+        p {
+            color: #fffefefa;
+            font-size: 17pt;
+        }
+
+        img:hover {
+            border-radius: 0px;
+            transition: 2s;
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Imagens fluídas</h1>
+    <p>Estas são minhas imagens fluídas</p>
+
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="img/bg-p.jpg" type="image/jpg">
+
+        <source media="(max-width: 1000px)" srcset="img/bg-m.jpg" type="image/jpg">
+
+        <img src="img/bg-g.jpg">
+
+    </picture>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+
+</head>
+
+<body>
+
+    <h1> Imagens dinâmicas</h1>
+    <p>Tente abrir este site em diversos dispositivos diferentes ou apenas aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 720px)" srcset="img/p.png" type="image/png">
+
+        <!-- Se a imagem for menor que 700px ela mudará para pequena  -->
+        <source media=" (max-width: 1020px)" srcset="img/m.png" type="image/png">
+
+        <!-- Se a imagem for menor que 1000 ela mudará para média. -->
+        <img src="img/g.png" alt="imagem flexivel">
+    </picture>
+
+
+    <!-- O PICTURE e SOURCE MEDIA, são usados para qualquer tipo de tela de usuário, facilitando a sua visão a imagem de aparelhos moveis a monitores grandes -->
+
+
+    <h1>Reproduzir aúdio</h1>
+
+    <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+
+    <!--
+    <audio src="./midia/happy-mistake.mp3" controls autoplay></audio>
+     Alguns navegadores não são compátiveis com esses tipos de áudio: WAV, MP3 , OGG  para isso, utilize outros meios ou formatos. 
+    -->
+
+    <audio preload="metadata" controls loop>
+
+        <!-- PRELOAD funciona com o AUTO, NONE e METADATA 
+        AUTO e NONE não é recomendável para arquivos muito grandes.
+        
+        -->
+
+
+        <source src="./midia/happy-mistake.mp3" type="audio/mpeg">
+        <!--
+        
+            <source src="./midia/happy-mistake.ogg" type="audio/ogg"> 
+        
+            <source src="./midia/happy-mistake.wav" type="audio/wav - não recomendado por conta de seu tamanho.
+
+            diferentes formatos e diferentes tipos de TYPE.
+        -->
+        <p> infelizmente seu navegador não consegue reproduzir áudio <a href="./midia/happy-mistake.mp3">clique aqui</a>
+            para baixar o seu arquivo mídia.</p>
+    </audio>
+
+</body>
+
+</html>

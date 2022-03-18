@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Vídeos com HTML 5</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /* video {
+            margin: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        Inserindo vídeos hospedados
+    </h1>
+
+    <p>Este vídeo está hospedado no meu próprio servidor local.</p>
+
+
+    <!-- Hospedar dessa maneira pode prejudicar o cliente pois vai exigir mais tráfego de banda e pesará no bolso dele.  -->
+
+    <!-- Porém ainda é uma das maneiras. -->
+
+    <video controls poster="img/rain.jpg" width="65%" height="360" loop>
+
+        <source src="midias/rain.webm" type="video/webm">
+
+        <source src="midias/rain.ogv" type="video/ogv">
+
+        <source src="midias/rain.m4v" type="video/mp4">
+
+        <source src="midias/rain.mp4" type="video/mp4">
+
+
+        <p>Seu navegador não possui compatibilidade com esses reprodutores de vídeos.</p>
+
+        <p> Caso queira baixa e assistir, clique aqui:</p> <a href="midias/rain.mp4"></a>
+
+        <!-- <video src="videos/Rain.mp4" width="75%" controls loop type="video/mpeg">
+    </video> -->
+
+        <!-- <video src="videos/Rain.m4v" width="75%" controls loop type="video/mpeg">
+    </video>
+
+    <video src="videos/Rain.ogv" width="75%" controls loop type="video/mpeg">
+    </video>
+
+    <video src="videos/Rain.webm" width="75%" controls loop type="video/mpeg">
+    </video> -->
+
+    </video>
+
+    <h2>Inserindo vídeos do youtube</h2>
+
+    <p>Este vídeo está hospedado externamente no youtube</p>
+
+    <iframe width="65%" height="360" src="https://www.youtube.com/embed/s9X0_Vb-4zc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <h2> Inserindo vídeos do vimeo </h2>
+
+    <p>Este vídeo está hospedado externamente no vimeo</p>
+
+    <iframe src="https://player.vimeo.com/video/191894507?h=e15bf4bcf0&portrait=0" width="65%" height="360"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+
+</html>

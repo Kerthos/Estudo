@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código fonte e Pré-formatação</h2>
+    <p>O comando <code>documente.getelementByID('teste')</code> é escrito em linguagem JS (JavaScript).</p>
+
+    <pre>
+        <code>
+    num = int(input('digite um número, pode ser qualquer um '))
+    if num % 2 == 0:
+    print(f' O número {num} é PAR)
+    else:
+    print(f' O {num} é ÍMPAR')
+    print(fim do programa')
+        </code>
+    </pre>
+
+    <!-- A tag PRE considera tudo que estiver dentro dela, e mostrará na tela, inclusive os espaços. -->
+
+    <!-- A tag CODE é usada mais para ler códigos como exemplo acima -->
+
+    <!-- O atalho SHIFT + TAB voltam o espaço das linhas, já o TAB anda mais espaços. -->
+
+    <h2> Citações Simples</h2>
+
+    <p>Como diria um pai de um amigo meu: <q>O computador é um burro muito rápido</q>.</p>
+
+    <!-- A tag Q é usada para citações ou seja citar algo ou alguém. -->
+
+    <h2> Citações Completas</h2>
+
+    <p>Segundo <strong>Elisabeth Robson</strong> em seu livro <q>
+            <strong>Use a cabeça (Head First) programação em
+                HTML5</strong>
+        </q>:</p>
+    <blockquote
+        cite="https://www.google.com.br/books/edition/Use_a_Cabeça_Programação_em_HTML_5/mKW6BAAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML&printsec=frontcover">
+        <q>
+            Seu cérebro precisa de novidades. Está sempre buscando, examindando <EM>esperando</EM> por algo diferente.
+            Ele
+            foi criado assim e isso ajuda você a permanecer vivo.
+        </q>
+
+        <!-- A tag BLOCKQUOTE é adicionada para que possa ser usada uma longa citação e o CITE é o link de onde foi tirada a citação. -->
+    </blockquote>
+
+    <h2>Abreviações</h2>
+
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr
+            title="Cascading Style Sheets">CSS</abbr>. Estou adorando.
+    </p>
+
+    <!-- A tag ABBR é utulizada para abreviações / siglas abreviadas no texto, como exemplo acima. -->
+
+    <h2>Texto invertido</h2> <!-- O menos adorado, coisa horrenda -->
+
+    <p>
+        <bdo dir="ltr"> Olá eu sou muito irritante!</bdo>
+        <!-- bdo:l left to right -->
+    </p>
+
+    <p>
+        <bdo dir="rtl">Olá eu sou muito irritante!</bdo>
+        <!-- bdo:r rigth to left -->
+    </p>
+</body>
+
+</html>

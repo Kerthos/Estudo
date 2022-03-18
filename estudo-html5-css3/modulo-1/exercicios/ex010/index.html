@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar e utilizar o repositório no <a href="https://gustavoguanabara.github.io" target="_blank"
+            rel="external"> Github </a>do
+        professor <strong>Gustavo Guanabara</strong></p>
+
+    <!-- target="_blank" (coloca o resultado em outra janela) e rel="external" (abre a janela externa) são utilizados para não sobrepor o seu site e abir uma janela externa com o link clicado -->
+
+    <!-- São utilizados para um site que não é seu faz com que abra em outra janela e não sobreponha o seu. -->
+
+    <p>Você também pode acessar o <strong>canal dele:</strong> <a href="https://youtube.com/cursoemvideo"
+            target="_blank" rel="external">Gustavo-Guanabara</a></p>
+
+    <h2>Usando os links internos</h2>
+
+    <p>
+        Esta é a primeira página do seu site. Caso queira acessar a segunda, <a href="pag002.html" rel="next">clique
+            aqui</a>
+        <!-- O rel="next" facilita que o mecanismo de busca procure e ache o seu site mais rápido. -->
+    </p>
+
+    <p>Caso queira acessar a página de <strong>notícias</strong> do site, <a href="noticias/pag003.html" target="_self"
+            rel="next">clique
+            aqui</a></p>
+
+    <!-- target="_self" (coloca o resultado na própria janela) -->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="./livros/ex-livro.pdf" download="ex-livro.pdf" type="application/pdf">Baixar o livro em PDF</a>
+        </li>
+        <li><a href="./livros/ex-livro.zip" download="ex-livro.zip" type="application/zip">Livro compactado em ZIP</a>
+        </li>
+    </ul>
+
+    <!-- O parâmetro DOWNLOAD já pode ativar o Download em alguns navegadores. Já alguns podem funcionar com o TYPE e o Download juntos. -->
+</body>
+
+</html>

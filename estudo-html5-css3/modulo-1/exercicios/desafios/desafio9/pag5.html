@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/ffox.ico" type="image/x-icon">
+    <title>Sugestão de vídeo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            background-color: #262724;
+        }
+
+        #box {
+            margin: 10em;
+            text-align: center;
+            background: #183c72;
+            box-shadow: black 0px 0px 25px;
+            padding: 10px;
+        }
+
+        #box:hover {
+            background: #242323fa;
+            transition: 2s;
+            border-radius: 30px;
+            border: 5px solid;
+            border-image: linear-gradient(90deg, #f2ca16, #0a89fb 100%) 1;
+        }
+
+        iframe {
+            position: relative;
+            margin: 10%;
+            box-shadow: black 0px 0px 15px
+        }
+
+        h1 {
+            color: #252627;
+            background: white;
+            width: 40%;
+            margin-left: 30%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        img,
+        a {
+            color: white;
+            position: relative;
+            right: 0em;
+            width: 9%;
+        }
+
+        img:hover {
+            transition: 2s;
+            border: white 5px solid;
+            border-radius: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+
+        <h1> Curso de Python </h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <a href="index.html"><img src="img/seta-voltar-black.png" alt="Seta de voltar"></a>
+    </div>
+
+</body>
+
+</html>
